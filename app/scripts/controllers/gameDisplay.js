@@ -7,6 +7,5 @@ angular.module('gameCollectionApp')
         GameService.getGames()
             .then(function(response) {
                 $scope.gameList = response;
-                console.log($scope.gameList);
             });
     });
