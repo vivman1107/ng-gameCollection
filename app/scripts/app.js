@@ -38,5 +38,14 @@ var gameCollectionApp =
             templateUrl: 'views/footer.html'
           }
         }
+      })
+      
+      .state('home.addGame', {
+        url: 'addGame',
+        views: {
+          'content@': {
+            templateUrl: 'views/addGame.html'
+          }
+        }
       });
   }]);
