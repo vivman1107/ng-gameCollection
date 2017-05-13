@@ -18,7 +18,8 @@ var gameCollectionApp =
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'ui-notification'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
@@ -36,6 +37,16 @@ var gameCollectionApp =
           },
           'footer': {
             templateUrl: 'views/footer.html'
+          }
+        }
+      })
+      
+      .state('home.addGame', {
+        url: 'addGame',
+        views: {
+          'content@': {
+            templateUrl: 'views/addGame.html',
+            controller: 'AddGameController'
           }
         }
       });
