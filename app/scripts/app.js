@@ -49,5 +49,15 @@ var gameCollectionApp =
             controller: 'AddGameController'
           }
         }
+      })
+
+      .state('home.detail', {
+        url: '/:id',
+        views: {
+          'detail@home': {
+            templateUrl: 'views/updateGame.html',
+            controller: 'UpdateGameController'
+          }
+        }
       });
   }]);

@@ -29,6 +29,10 @@
             <td>{{game.platform}}</td>
             <td>{{game.genre}}</td>
             <td>{{game.format}}</td>
+            <td><a ui-sref="home.detail({id: game._id})">Update</a></td>
+            <td ng-click="deleteGame(game._id)">Delete</td>
         </tr>
     </tbody>
 </table>
+
+<div ui-view="detail"></div>
